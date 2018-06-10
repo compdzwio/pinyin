@@ -151,7 +151,7 @@ namespace Overtrue.Pinyin
                 return "\t" + match.Value[0];
             }), RegexOptions.IgnoreCase);
 
-            return Regex.Replace(str, @"[^\p{Han}\p{P}\p{Z}\p{M}\p{N}\p{L}\t]", "", RegexOptions.CultureInvariabnt);
+            return Regex.Replace(str, @"[^\p{Han}\p{P}\p{Z}\p{M}\p{N}\p{L}\t]", "", RegexOptions.CultureInvariant);
         }
 
         /**
